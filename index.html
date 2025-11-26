@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="icon" href="./Assets/ylogo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./Assets/menu.png" alt="menu" class="menuicon" />
+          <img src="./Assets/logo.png" alt="logo" class="logo" />
+        </div>
+        <div class="searchbar">
+          <input
+            type="text"
+            name="searchbar"
+            placeholder="search"
+            id="search"
+            class="s-nav-hide"
+          />
+          <button class="search">
+            <img src="./Assets/search.png" alt="search" />
+          </button>
+          <div class="mic s-nav-hide"><img src="./Assets/mike.png" alt="mic" /></div>
+        </div>
+        <div class="setting">
+          <button class="addbtn">
+            <img src="./Assets/add.png" alt="add" /><span>Create</span>
+          </button>
+          <img src="./Assets/notification.png" class="bell s-nav-hide" alt="bell icon" />
+          <div class="account">
+            <img src="./Assets/account-logo.png" alt="account logo" />
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="menu">
+          <div class="side-container">
+            <div class="home tool">
+              <img src="./Assets/home.png" alt="home" />
+              <p class=" m-show">Home</p>
+            </div>
+            <div class="Shorts tool">
+              <img src="./Assets/Shorts.png" alt="Shorts" />
+              <p class=" m-show">Shorts</p>
+            </div>
+            <div class="Subscription tool">
+              <img src="./Assets/Subscription.png" alt="Subscription" />
+              <p class=" m-show">Subscription</p>
+            </div>
+          </div>
+          <!-- you box//////////////////////////// -->
+          <div class="side-container">
+            <h3 class="m-hide">&nbsp;&nbsp;You &nbsp;&nbsp;></h3>
+            <div class="History tool m-hide">
+              <img src="./Assets/History.png" class="m-change" alt="History" />
+              <p class="m-hide m-change">History</p>
+            </div>
+            <div class="Playlists tool m-hide">
+              <img src="./Assets/Playlists.png" alt="Playlists" />
+              <p class="m-hide">Playlists</p>
+            </div>
+            <div class="Your-videos tool m-hide">
+              <img src="./Assets/video.png" alt="Your videos" />
+              <p class="m-hide">Your videos</p>
+            </div>
+            <div class="Your-course tool m-hide">
+              <img src="./Assets/course.png" alt="Your Courses" />
+              <p class="m-hide">Your Courses</p>
+            </div>
+            <div class="watchlater tool m-hide">
+              <img src="./Assets/watch later.png" alt="watchlater" />
+              <p class="m-hide">Watch Later</p>
+            </div>
+            <div class="like-videos tool m-hide">
+              <img src="./Assets/like.png" alt="like videos" />
+              <p class="m-hide">Like videos</p>
+            </div>
+            <div class="downloads tool ">
+              <img src="./Assets/download.png" alt="downloads" />
+              <p class="m-show">Downloads</p>
+            </div>
+          </div>
+          <!-- subscription box ////////// -->
+          <div class="side-container subscription">
+            <h3 class="m-hide">&nbsp;&nbsp;Subscriptions &nbsp;&nbsp;></h3>
+            <div class="History tool m-hide">
+              <img src="./Assets/dhruv.png" alt="History" />
+              <p class="m-hide">Dhruvh Rathee</p>
+            </div>
+            <div class="Playlists tool m-hide">
+              <img src="./Assets/apnacollege.png" alt="Playlists" />
+              <p class="m-hide">Apna College</p>
+            </div>
+            <div class="Your-videos tool m-hide">
+              <img src="./Assets/abhiniyu.png" alt="Your videos" />
+              <p class="m-hide">Avhi and Niyu</p>
+            </div>
+            <div class="Your-course tool m-hide">
+              <img src="./Assets/amandha.png" alt="Your Courses" />
+              <p class="m-hide">Aman Dhattarwal</p>
+            </div>
+            <div class="watchlater tool m-hide">
+              <img src="./Assets/codewith hary.png" alt="watchlater" />
+              <p class="m-hide">Code with Harry</p>
+            </div>
+            <div class="like-videos tool m-hide">
+              <img src="./Assets/rahulmal.png" alt="like videos" />
+              <p class="m-hide">CA Rahul malodia</p>
+            </div>
+            <div class="downloads tool m-hide">
+              <img src="./Assets/darrow.png" alt="downloads" />
+              <p class="m-hide">Show more</p>
+            </div>
+          </div>
+          <!-- explore ////////////////////////////// -->
+          <div class="side-container extra">
+            <h3 class="m-hide">&nbsp;&nbsp;Explore</h3>
+            <div class="Shopping tool m-hide">
+              <img src="./Assets/Shopping.png" alt="Shopping" />
+              <p class="m-hide">Shopping</p>
+            </div>
+            <div class="Music tool m-hide">
+              <img src="./Assets/Music.png" alt="Music" />
+              <p class="m-hide">Music</p>
+            </div>
+            <div class="Movies tool m-hide">
+              <img src="./Assets/movie.png" alt="Movies" />
+              <p class="m-hide">Movies</p>
+            </div>
+            <div class="Live tool m-hide">
+              <img src="./Assets/live.png" alt="Live" />
+              <p class="m-hide">Live</p>
+            </div>
+            <div class="Gaming tool m-hide">
+              <img src="./Assets/gaming.png" alt="Gaming" />
+              <p class="m-hide">Gaming</p>
+            </div>
+            <div class="News tool m-hide">
+              <img src="./Assets/news.png" alt="News" />
+              <p class="m-hide">News</p>
+            </div>
+            <div class="sport tool m-hide">
+              <img src="./Assets/sports.png" alt="sport" />
+              <p class="m-hide">Sports</p>
+            </div>
+            <div class="Courses tool m-hide">
+              <img src="./Assets/course1.png" alt="Courses" />
+              <p class="m-hide">Courses</p>
+            </div>
+            <div class="fashion tool m-hide">
+              <img src="./Assets/fashion.png" alt="fashion" />
+              <p class="m-hide">Fashion and Beauty</p>
+            </div>
+            <div class="Podcasts tool m-hide">
+              <img src="./Assets/podcast.png" alt="Podcasts" />
+              <p class="m-hide">Podcasts</p>
+            </div>
+          </div>
+          <!-- more from youtube ///////////////////// -->
+          <div class="side-container extra">
+            <h3 class="m-hide">&nbsp;&nbsp;More from YouTube</h3>
+            <div class="Premium tool m-hide">
+              <img src="./Assets/ylogo.png" alt="Premium" />
+              <p class="m-hide">YouTube Premium</p>
+            </div>
+            <div class="studio tool m-hide">
+              <img src="./Assets/ystudio.png" alt="studio" />
+              <p class="m-hide">YouTube Studio</p>
+            </div>
+            <div class="Music tool m-hide">
+              <img src="./Assets/ymusic.png" alt="Music" />
+              <p class="m-hide">YouTube Music</p>
+            </div>
+            <div class="Live tool m-hide">
+              <img src="./Assets/ykids.png" alt="Kids" />
+              <p class="m-hide">YouTube Kids</p>
+            </div>
+          </div>
+          <!-- setting /////////////////////////////// -->
+          <div class="side-container extra">
+            <div class="Settings tool m-hide">
+              <img src="./Assets/setting.png" alt="Settings" />
+              <p class="m-hide">YouTube Settings</p>
+            </div>
+            <div class="Report tool m-hide">
+              <img src="./Assets/report.png" alt="Report" />
+              <p class="m-hide">Report History</p>
+            </div>
+            <div class="Help tool m-hide">
+              <img src="./Assets/help.png" alt="Help" />
+              <p class="m-hide">Help</p>
+            </div>
+            <div class="feedback tool m-hide">
+              <img src="./Assets/feedback.png" alt="feedback" />
+              <p class="m-hide">Send feedback</p>
+            </div>
+          </div>
+          <!-- copyright////////////////////////// -->
+          <div class="side-container">
+            <div class="copyright">
+              <p class="m-hide">
+                About Press Copyright <br />Contact us Creators Advertise
+                <br />Developers
+              </p>
+              <p class="m-hide">
+                Terms Privacy Policy & Safety <br />How YouTube works <br />Test
+                new features
+              </p>
+              <p class="m-hide">© 2025 Google LLC</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="hero-nav">
+            <ul>
+              <li><button class="li-btn">All</button></li>
+              <li><button class="li-btn">Coding</button></li>
+              <li><button class="li-btn">Development</button></li>
+              <li><button class="li-btn">Travel</button></li>
+              <li><button class="li-btn">Podcasts</button></li>
+              <li><button class="li-btn">Android</button></li>
+              <li><button class="li-btn">Technology</button></li>
+              <li><button class="li-btn">Food</button></li>
+              <li><button class="li-btn">Facts</button></li>
+              <li><button class="li-btn">ios</button></li>
+              <li><button class="li-btn">AI</button></li>
+              <li><button class="li-btn">Editing</button></li>
+              <li><button class="li-btn">Live</button></li>
+              <li><button class="li-btn">Comedy</button></li>
+              <li><img src="./Assets/forward.png" alt="forward" /></li>
+            </ul>
+          </div>
+          <!-- this is long video line one..................  -->
+          <div class="long-row1">
+            <div class="card">
+              <img src="./Assets/card1.png" alt="CARD" />
+              <div class="info">
+                <img src="./Assets/dhruv.png" class="channel" alt="channel" />
+                <div class="description">
+                  <p class="title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus.
+                  </p>
+                  <p class="cname">Dhruv Rathee</p>
+                  <p class="cname view">999K views .1 month ago</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Assets/card2.png" alt="CARD" />
+              <div class="info">
+                <img
+                  src="./Assets/abhiniyu.png"
+                  class="channel"
+                  alt="channel"
+                />
+                <div class="description">
+                  <p class="title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus
+                  </p>
+                  <p class="cname">Dhruv Rathee</p>
+                  <p class="cname view">999K views .1 month ago</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./Assets/card3.png" alt="CARD" />
+              <div class="info">
+                <img src="./Assets/car.png" class="channel" alt="channel" />
+                <div class="description">
+                  <p class="title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Minus
+                  </p>
+                  <p class="cname">Dhruv Rathee</p>
+                  <p class="cname view">999K views .1 month ago</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+          </div>
+          <!-- this is short video line one ................... -->
+          <div class="shorts-row1">
+            <div class="short">
+              <img src="./Assets/short1.png" alt="shorts" />
+              <div class="info">
+                <div class="description short-d">
+                  <p class="title">
+                    Lorem ipsum dolorsitamet consectetur elit.
+                  </p>
+                  <p class="cname">999K views</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="short">
+              <img src="./Assets/short2.png" alt="shorts" />
+              <div class="info">
+                <div class="description short-d">
+                  <p class="title">
+                    Lorem ipsum dolorsitamet consectetur elit.
+                  </p>
+                  <p class="cname">999K views</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="short">
+              <img src="./Assets/short3.png" alt="shorts" />
+              <div class="info">
+                <div class="description short-d">
+                  <p class="title">
+                    Lorem ipsum dolorsitamet consectetur elit.
+                  </p>
+                  <p class="cname">999K views</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="short">
+              <img src="./Assets/short4.png" alt="shorts" />
+              <div class="info">
+                <div class="description short-d">
+                  <p class="title">
+                    Lorem ipsum dolorsitamet consectetur elit.
+                  </p>
+                  <p class="cname">999K views</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <div class="short">
+              <img src="./Assets/short5.png" alt="shorts" />
+              <div class="info">
+                <div class="description short-d">
+                  <p class="title">
+                    Lorem ipsum dolorsitamet consectetur elit.
+                  </p>
+                  <p class="cname">999K views</p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+          </div>
+          <!-- this is long video line 2..................  -->
+          <div class="long-row2">
+            <div class="long-row1">
+              <div class="card">
+                <img src="./Assets/card4.png" alt="CARD" />
+                <!-- <div class="timeline">8:41</div> -->
+                <div class="info">
+                  <img
+                    src="./Assets/rahulmal.png"
+                    class="channel"
+                    alt="channel"
+                  />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Assets/card-5.png" alt="CARD" />
+                <div class="info">
+                  <img
+                    src="./Assets/wscube-tech.png"
+                    class="channel"
+                    alt="channel"
+                  />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Assets/card-6.png" alt="CARD" />
+                <div class="info">
+                  <img
+                    src="./Assets/tec-chip.png"
+                    class="channel"
+                    alt="channel"
+                  />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shorts-row2">
+            <!-- this is long video line 3...............  -->
+            <div class="long-row1">
+              <div class="card">
+                <img src="./Assets/card-7.png" alt="CARD" />
+                <div class="info">
+                  <img src="./Assets/tec.png" class="channel" alt="channel" />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Assets/card-8.png" alt="CARD" />
+                <div class="info">
+                  <img src="./Assets/tanay.png" class="channel" alt="channel" />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Assets/card-9.png" alt="CARD" />
+                <div class="info">
+                  <img
+                    src="./Assets/hitesh.png"
+                    class="channel"
+                    alt="channel"
+                  />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="long-row4">
+            <!-- this is long video line 4.................  -->
+            <div class="long-row1">
+              <div class="card">
+                <img src="./Assets/card-10.png" alt="CARD" />
+                <!-- <div class="timeline">8:41</div> -->
+                <div class="info">
+                  <img
+                    src="./Assets/growth.png"
+                    class="channel"
+                    alt="channel"
+                  />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Assets/card-11.png" alt="CARD" />
+                <div class="info">
+                  <img src="./Assets/david.png" class="channel" alt="channel" />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./Assets/card12.png" alt="CARD" />
+                <div class="info">
+                  <img
+                    src="./Assets/laptop.png"
+                    class="channel"
+                    alt="channel"
+                  />
+                  <div class="description">
+                    <p class="title">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Minus, accusamus.
+                    </p>
+                    <p class="cname">Dhruv Rathee</p>
+                    <p class="cname view">999K views .1 month ago</p>
+                  </div>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
