@@ -199,6 +199,7 @@ body {
 /* this is the hero section of the main body //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .hero {
   height: 93vh;
+  width: 100%;
   flex: 1;
   overflow: auto;
   margin: auto;
@@ -269,7 +270,7 @@ body {
   flex: 1;
   max-width: 100%;
   flex-wrap: wrap;
-  height: 29rem;
+  max-height: 29rem;
   background-color: rgb(15, 15, 15);
   border-radius: 0.5rem;
   padding: 0.6rem;
@@ -306,3 +307,88 @@ body {
 }
 
 /* from this the responsiveness is started /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width:790px) {
+  .menu{
+    display: none;
+  }
+}
+@media (max-width:1300px) {
+  .main{
+    width: 100vw;
+  }
+  .m-hide{
+    display: none;
+  }
+.m-show{
+  display: block;
+}
+.side-container{
+      border-bottom:none;
+      flex-wrap: wrap;
+}
+}
+@media (max-width:450px) {
+  .container{
+    width: 100%;
+  }
+  .long-row1{
+    flex-wrap: wrap;
+  }
+  .s-nav-hide{
+    display: none;
+  }
+  .search{
+    /* display: none; */
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: black;
+    margin: 0 0.5rem;
+    padding: 0;
+  }
+  .search img{
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: black;
+  }
+  .searchbar{
+    margin-left: 1rem;
+  }
+  .main{
+    width: 100vw;
+  }
+  .hero{
+    overflow-x: hidden;
+  }
+  .hero-nav{
+    overflow-x: hidden;
+  }
+  .navbar{
+    width: 100px;
+  }
+  .hero::-webkit-scrollbar {
+  background-color: rgb(15, 15, 15);
+  width: 5px;
+  padding: 10px;
+}
+.logo{
+  width: 8rem;
+  margin-right: 2rem;
+}
+.addbtn{
+  margin: 0.5rem;
+}
+.hero-nav{
+  width: 100%;
+}
+.li-btn{
+  margin: 0 0.3rem;
+}
+.short{
+  min-width: 11rem;
+  min-height: 15rem;
+}
+.short img {min-height: 10rem;}
+}
